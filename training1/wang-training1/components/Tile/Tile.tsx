@@ -13,6 +13,7 @@ export const Tile: FC<TileProps> = ({ tileId }) => {
       onClick={() => {
         makeMove(tileId);
       }}
+      data-testid={tileId}
     >
       {thisTile?.user && thisTile?.user == winner && "🥳"}
       {thisTile?.user}
